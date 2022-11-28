@@ -1,0 +1,68 @@
+h1{
+	text-align:center;
+	font-size: 42px;
+    font-weight: bold;
+    text-shadow: 3px 2px 7px rgb(2, 78, 200);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fdfeff;
+	padding: 70px 0;
+}
+img{
+    width: 200px;
+}
+h3{
+	font-size: 28px;
+    font-weight: bold;
+    color: darkblue;
+	padding: 0 0 10px 0;
+}
+h3>img{
+	width:24px;
+	margin:0 0 0 10px;
+}
+#html{
+	width: 33%;
+}
+#css{
+	width: 33%;
+}
+#javascript{
+	width: 33%;
+}
+#homework{
+	width: 33%;
+}
+section{
+    padding: 30px 0;
+}
+.tech{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://cdn.pixabay.com/photo/2012/05/04/09/07/clouds-46795_960_720.png);
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+    
+}
+p{
+    color: brown;
+}
+.day{
+    font-size: 16px;
+    font-weight: normal;
+}
+ul>li>ul>li{
+    padding: 4px;
+}
+	
+section{
+	display: flex;
+}	
+.container{
+	width:86%;
+	height:inherit;
+	margin:0 auto;
+}

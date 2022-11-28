@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>parent</title>
+</head>
+<body>
+	<h1>부모프레임</h1>
+	<ul>
+		<li><a href="img-1.html" target="mainframe">오늘배운 이미지 넣기</a></li>
+	</ul>
+	<hr/>
+	<!-- name="a태그 target속성과 연결" -->
+	<iframe src="child.html" width="600" height="400" frameborder="0" name="mainframe"></iframe>
+	<!-- iframe을 쓰면 스크린리더기,컴퓨터가 잘 읽지 못하기 때문에 웹표준과 맞지 않음 -->
+	<!-- html이 새로 전부 들어가기 때문에 자바스크립트 사용가능//보안에 취약하다 -->
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+	
+	<style type="text/css">
+		table,th,td{border:1px solid #ddd;}
+		td{width:100px; height:60px;}
+		td,th{padding:10px;}
+		tfoot,thead{
+		background:#ddd;}
+	</style>
+
+</head>
+<body>
+	<table>
+		<caption>colgroup 연습</caption>
+		<colgroup>
+			<col style="background:pink;"/>
+			<col span="2" style="background:blue;"/>
+			<col style="background:red;"/>
+		</colgroup>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

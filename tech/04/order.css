@@ -1,0 +1,32 @@
+.container{
+	width:600px;
+	margin:auto;
+}
+ul{
+	/* list-style의 줄임말 */
+	list-style-type:none;
+}
+/* label태그의 class속성이 title인 요소에 적용 */
+label.title{
+	font-weight:bold;
+	float:left;
+}
+div.centred{
+	text-align:center;
+}
+fieldset{
+	margin:15px 10px; /* 상하 좌우 */
+}
+fieldset legend{
+	font-weight:bold;
+	font-size:18px;
+	color:purple;
+}
+ul li{
+	margin:0 0 10px 0; /* 위 오른 아래 왼 */
+}
+/* nth는 자바스크립트가 인식을 못하기 때문에 잘 쓰지 않는것이 좋다. */
+fieldset:nth-child(3) label:first-child{
+	width:90px;
+	float:left;
+}

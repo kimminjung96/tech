@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>fieldset과 legend</title>
+	<style type="text/css">
+		ul{list-style:none;}
+		li{margin:20px;}
+		li label{width:80px; float:left;}
+		<!-- 태그가 인라인이면 width를 못가짐// -->
+		<!-- float:left;를 적용하면 인라인요소를 블럭처럼 사용이 가능하다. -->
+		fieldset{margin:15px;}
+	</style>
+</head>
+<body>
+	<!-- 
+		fieldset : 폼요소들을 그룹 지어주는 역할
+		legend : fieldset의 제목 (그룹명)
+	-->
+	<form action="#" method="post">
+		<fieldset>
+			<legend>개인정보</legend>
+			<ul>
+				<li>
+					<label for="name">이름</label><input type="text" id="name"/>
+				</li>
+				<li>
+					<label for="mail">메일주소</label><input type="text" id="mail"/>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>로그인정보</legend>
+			<ul>
+				<li>
+					<label for="id">아이디</label><input type="text" id="id"/>
+				</li>
+				<li>
+					<label for="pw">비밀번호</label><input type="text" id="pw"/>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	<!-- action 에는 입력된 정보가 저장될 서버컴퓨터의 경로가 들어간다.(어디로 보내는지?) -->
+	<!-- method = 어떻게 보내는지? -->
+	<!-- post(봉투에 넣은) -제한이 없음,경로가 눈에 보이지 않음(보안이 필요한 정보, 혹은 데이터가 많은것)
+		 get(엽서) - 글자에 제한이 있음,다른사람들과 공유할 때 (경로나오는 것) -->
+	<!-- get 주소표시줄에 보임 / post 안보임  -->
+	<form action="action.php" method="get">
+		<!-- text-글자를 입력할 수 있는 양식 -->
+		<input type="text" value="검색어를 입력해주세요." />
+		<input type="submit" value="검색" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>output.html</title>
+</head>
+<body>
+	<!-- oninput : 사용자가 폼 태그에 입력하거나 값이 변경되면 실행  -->
+	<!-- parseInt(숫자) 숫자로 바꿔 줌 -->
+	
+	<!-- =은 같다가 아니라 '우항에 있는 값을 좌항에 할당한다'는 것을 의미한다. -->
+	<!-- 자바스트립트에서 .은 속성을 뜻함 -->
+	<form oninput="result.value= parseInt(num1.value) + parseInt(num2.value)">
+		<input type="number" name="num1" value="0" />+
+		<input type="number" name="num2" value="0" />=
+		<output name="result" for="num"></output>
+	</form>
+</body>
+</html>
