@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'trana'; /* font-family-폰트이름, 사용자 설정 */
     /* src-폰트파일 경로, 파일형식 (웨에 파일 먼저 실행후 없으면 아래파일을 실행한다.) */
-    src: url('./trana.woff') format('woff');
+    src:local("trana") url('./trana.woff') format('woff');
     src: url('./trana.eot?#iefix') format('embedded-opentype'), url('./trana.ttf') format('truetype');
     /* #iefix는 익스 하위에 맞추는 핵 */
 }

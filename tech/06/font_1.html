@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 	<head>
 		<meta charset="utf-8" />
 		<title>폰트</title>
+		<link rel="stylesheet" href="fonts/fonts.css">
 		<style>
-			#box1 h2{
+			#box1 h2 {
 				/* serif, sans-serif 글꼴이 아님
-					옆에 글꼴이 없으면 serif체 ,혹은 sans-serif체 아무거나
-					써주지 않으면 맥에서 레이아웃이 무너짐
+					serif 삐침이 있는 명조, sans-serif 고딕
 				*/
-				/* 
-					serif :삐침이 있는 명조, sans-serif 고딕 
-				*/
-				/* 글꼴 값을 여러개 지정하여 적용해 우선순위를 선언 */
-				/* 글꼴의 이름에 특수문자가 있을경우 ""("한글도 특수문자") */
-				font-family: "Times New Roman",Arial, serif;
+				/*글꼴 값을 여러개 지정하여 적용 우선순위 선언*/
+				/*글꼴의 이름에 특수문자가있을경우 ""*/
+				font-family: "Times New Roman", Arial, serif;
+				/* 글꼴크기 */
 				font-size: 2em;
+				/* 글꼴두께 */
 				font-weight: normal;
 			}
-			#box1 p{
+
+			#box1 p {
 				font-family: Georgia, 'Times New Roman', Times, serif;
 				font-size: 20px;
 				font-weight: bold;
 			}
-			#box2 h2{
+
+			#box2 h2 {
 				/* 기울기 */
 				font-style: italic;
-				color:red
+				color: red;
 			}
-			#box2 p{
-				font-style: italic;
-				color:red
+
+			#box2 p {
+				font-variant: small-caps;
+				color: #336633;
 			}
-			#box3 p{
-				font: small-caps 30px "Times New Ronam",serif;
+
+			#box3 h2 {
+				/* 축약속성 : 스타일, 크기, 줄간격, 글꼴*/
+				font: 3em Aria;
 			}
-			#box3 p.txt{
-				font:  italic 23px/24px 돋움;
-				/* 23px/24px  뒤에껀 줄간격 */
+
+			#box3 p {
+				font: small-caps 30px "Times New Roman", serif;
 			}
-			#box p.test{
+
+			#box3 p.txt {
+				font: italic 12px/24px 돋움;
+			}
+
+			#box3 p.test {
 				font: caption;
+				font: icon;
+				font: menu;
 			}
 		</style>
 	</head>
+
 	<body>
 		<div id="box1">
 			<h2>font-family, font-size, font-weight</h2>
@@ -57,14 +70,15 @@
 			<h2>font</h2>
 			<p>Education is a progressive discovery of our own ignorance.</p>
 			<p class="txt">여러 요소가 함께 사용된 웹 문서 안에서 텍스트가 눈에 띄게 하려면 내용에 맞는 글꼴과 글자 크기, 그리고 글자색을 선택하는 것이 중요합니다. </p>
-			<p calss="test">이럴 때 사용할 수 있는 것이 글꼴 속성입니다. </p>
+			<p class="test">이럴 때 사용할 수 있는 것이 글꼴 속성입니다. </p>
 			<p style="font:caption"> [font:caption] 캡션에 어울리는 글꼴 스타일</p>
 			<p style="font:icon"> [font:icon] 아이콘에 어울리는 글꼴 스타일</p>
 			<p style="font:menu"> [font:menu] 드롭다운 메뉴에 어울리는 글꼴 스타일</p>
 			<p style="font:message-box"> [font:message-box] 대화 상자에 어울리는 글꼴 스타일</p>
 			<p style="font:small-caption"> [font:small-caption] 작은 캡션에 어울리는 글꼴 스타일</p>
 			<p style="font:status-bar"> [font:status-bar] 상태표시줄에 어울리는 글꼴 스타일</p>
-		
+
 		</div>
 	</body>
+
 </html>
