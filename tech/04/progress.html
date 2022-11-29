@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+</head>
+<body>
+    <form action="#">
+        <label>10초남음</label>
+        <progress max="60" value="50"></progress>
+        <br>
+        <label>진행률30%</label>
+        <progress max="100" value="30"></progress>
+    </form>
+
+    <h1>progressJS</h1>
+    <input type="button" value="다운로드시작">
+    <progress id="bar" value="0" max="100"></progress>
+    <script>
+        // 변해야 하는 값들을 변수에 저장
+        //setInterval(할일(function), 시간(500))
+        var bar=document.getElementById("bar");
+        var loaded=0; //초기값
+        
+        var load=function(){
+            loaded = loaded +5;
+            bar.value = 
+        }
+
+        //시간마다 할 일
+        setInterval(function(){
+            console.log("1");
+        },500)
+    </script>
+</body>
+</html>

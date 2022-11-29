@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Transform</title>
+	<style>
+		.box{
+			width: 100px;
+			border: 3px solid green;
+			padding: 30px 10px; /* 패딩값만큼 너비,높이 빼주기 */
+			text-align: center;
+			font-weight: bold;
+			color: blueviolet;
+			margin: 100px auto;
+			/* 크롬,사파리 */
+			-webkit-transform: translate(10px,70px); /* 이동하기 */
+			/* 오페라 */
+			-o-transform: skew(15deg);  /* 비틀비 */
+			/* 파이어폭스 */
+			-moz-transform: skew(15deg);  /* 비틀비 */
+			/* 익스 */
+			-ms-transform: skew(15deg);  /* 비틀비 */
+			/* 마지막은 기본형으로 쓰기 */
+			transform: translate(10px,100px) skew(15deg) ; /* 속성같이 적용시키기 */
+			/* skew(x축 비틀기,y축 비틀기) */
+
+			/* 글자 상하 중앙 (text가 한줄일때)
+			height: 50px;
+			line-height: 50px; 
+			*/
+		}
+		.box:hover{
+			transform:translate(10px,100px) skew(15deg) rotate(30deg);
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- 벤더 프리픽스 
+		회사 vendor 접두가 prefix
+		css 표준으로 재정되기 전 실험적인 기능들을 사용할때씀
+	-->
+	<div class="box">Mouse Over</div>
+</body>
+</html>

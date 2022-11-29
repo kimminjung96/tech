@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>웹 폰트 사용하기</title>
+    <style>
+      /* @import 글꼴 로드시 항상 최상단에 선언 */
+      /* 모든 글꼴파일은 문서의 최상단에 선언 */
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .ng-font {
+        font-family: "LeeSeoyun";
+        font-size: 30px;
+      }
+      .g-font{
+        /* 상단에 임포트 시킨 후 폰트웨이트 부분 긁어쓰기 */
+        font-family: 'Nanum Pen Script', cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="g-font">브라우저 기본 글꼴 사용</p>
+    <p class="ng-font">나눔고딕 웹 폰트 사용</p>
+  </body>
+</html>

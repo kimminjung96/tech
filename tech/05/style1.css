@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* @import url(); */
+h2{
+    color: green !important;
+}
+#tit.title{
+    color:darkred;
+}
+p#tit{
+    color: red;
+}
+
+/* 
+    css는 하나의 태그에 여러 속성을 주면 우선순위가 적용됨 => 캐스캐이딩
+    1. 작성순서 (내부에 작성할수록 우선순위가 높음)
+    2. 선언순서 (아래에 위치할수록 높음)
+    3. 점수 (태그1점 , 클래스 10점, 아이디100점)
+    => 합산해 사용가능
+*/
