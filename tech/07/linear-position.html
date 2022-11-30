@@ -4,7 +4,24 @@
   <meta charset="utf-8">
   <title>선형 그러데이션</title>
   <style>
-
+    div{
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .grad{
+      /* css3 미지원브라우저 */
+      /* 크로스브라우징 최대한 같게 맞추는 것 */
+      background: blue;
+      /* 초기모던브라우저 */
+      background: -webkit-linear-gradient(left top,blue,white);
+      background: -moz-linear-gradient(left top,blue,white);
+      background: -o-linear-gradient(left top,blue,white);
+      /* 최신브라우저 표준 //끝나는 부분 써! */
+      background: linear-gradient(to right bottom,blue,white);
+      background: linear-gradient(45deg,blue,white);
+      background: linear-gradient(45deg,blue,white,red);
+    }
   </style>
 </head>
 <body>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'dr';
-    src: url('./fonts/SCDream1.ttf');
+    src: url('./fonts/SCDream1.eot'),url('./fonts/SCDream1.woff'),url('./fonts/SCDream1.ttf');
     font-weight: 100;
 }
 @font-face {

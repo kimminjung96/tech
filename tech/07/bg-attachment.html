@@ -4,7 +4,28 @@
   <meta charset="utf-8">
   <title>배경 이미지</title>
   <style>
-    
+    body{
+      background-color: #222;
+      background-image: url('images/bottom-bg.jpg');
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: bottom;
+      background:#fff url('images/bottom-bg.jpg') no-repeat center bottom;
+      background-attachment: fixed;
+      /* attachment 배경이미지 고정 */
+    }
+    div{
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+      padding: 200px;
+    }
+    h1{
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
