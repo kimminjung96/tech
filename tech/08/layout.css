@@ -1,0 +1,18 @@
+body {font-family: "맑은 고딕", "고딕", "굴림"; } 
+#wrap {width: 80%;margin-right: auto;margin-left: auto; } 
+header {background-color: #069;overflow: hidden; } 
+header h1 {width: 40%;float: left;color: #fff;padding-left: 20px;font-size: 2em; } 
+header nav {width: 50%;float: right; } 
+nav ul {list-style: none; } 
+/* inline-block ie8호환x */
+nav ul li {display: inline;margin: 15px;float: left; } 
+nav ul li a {color: white;text-decoration: none; } 
+
+section {border: 5px solid #333;padding: 5px;overflow: hidden; } 
+section article h3 {background-image: url(images/bg.png);background-repeat: no-repeat;padding-left: 30px; } 
+section article dt {font-weight: bold;color: purple; } 
+
+section aside {margin-top: 40px; } 
+section aside h3 {padding-left: 30px; } 
+
+footer {padding: 30px;text-align: center;background-color: #333;color: white; } 

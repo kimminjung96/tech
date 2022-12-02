@@ -1,16 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<title>박스모델</title>
-	<style>
+  <head>
+    <meta charset="utf-8" />
+    <title>박스모델</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 200px;
+        height: 100px;
+        background-color: #0094ff;
+        /* box-sizing: border-box; */
+      }
+      .box1 {
+        border: 10px solid red;
+        border-width: 5px;
+        border-top-width: 1px;
+        border-bottom-width: 3px;
+        border-left-width: 10px;
+        border-right-width: 5px;
 
-	</style>
-</head>
-<body>
-	<div class="box1"></div>
-	<div class="box2"></div>
-	<div class="box3"></div>
-	<div class="box4"></div>
-</body>
+        border-style: dashed;
+        border-top-style: dashed;
+        border-right-style: double;
+        border-bottom-style: dotted;
+        border-left-style: solid;
+
+		border-color: red;
+		border-top-color: black;
+		border-right-color: blue;
+		border-bottom-color: green;
+		border-left-color: rgba(0,0,0,0); /*투명*/
+		border-left-color: transparent; /*투명*/
+
+		width: 180px;
+		height: 80px;
+      }
+      .box2 {
+        background-color: #ffff00;
+        padding: 10px;
+        padding: 20px 10px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+
+		padding: 50px 10px 5px; /* 위 옆 아래 */
+      }
+      .box3 {
+        background-color: pink;
+        margin: 10px;
+      } /* 박스의 바깥쪽, 여백에 크기에 영향X */
+
+	  /* 마진병합현상 */
+      .box1 {
+		margin: 40px;
+		display: inline-block;
+      }
+      .box2 {
+		margin: 40px;
+		display: inline-block;
+      }
+      .box3 {
+		margin: 40px;
+      }
+
+	  /* 부모자식 간의 병합 */
+      .box4 {
+		margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4 parent">
+		<div class="trandchild"><span>box4</span></div>
+	</div>
+  </body>
 </html>

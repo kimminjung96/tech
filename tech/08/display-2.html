@@ -4,13 +4,45 @@
 		<meta charset="utf-8">
 		<title>display 속성</title>
 		<style>
-
+			ul{
+				list-style: none;
+			}
+			ul a{
+				text-decoration: none;
+				color: black;
+			}
+			ul li{
+				/* block 레벨을 inline 레벨로 바꾼다. */
+				display: block; /*크기를 가지고 세로배치*/
+				display: inline; /*크기못가짐 가로배치*/
+				display: inline-block;/*크기도 가지고 가로배치*/
+				padding: 10px 15px;
+				margin-right: 20px;
+				border-top: 3px solid #222;
+				transition: all 0.3s;
+			}
+			ul li:hover{
+				background-color: rgb(196,196,196);
+			}
+			ul li ul{
+				display: none;
+			}
+			ul li:hover ul{
+				display: block;
+			}
 		</style>
 	</head>
 	<body>
 		<nav>
 			<ul>
-				<li><a href="#">애완견 종류</a></li>
+				<li><a href="#">애완견 종류</a>
+					<ul>
+						<li><a href="#">말티즈</a></li>
+						<li><a href="#">요키</a></li>
+						<li><a href="#">포메</a></li>
+						<li><a href="#">스피츠</a></li>
+					</ul>
+				</li>
 				<li><a href="#">입양하기</a></li>
 				<li><a href="#">건강돌보기</a></li>
 				<li><a href="#">더불어살기</a></li>

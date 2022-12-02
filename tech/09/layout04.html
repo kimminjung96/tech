@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{background-color: #fad7ff;}
+        #wrap{
+            width: 1000px;
+            height: 900px;
+            margin: auto;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+        header{width: 1000px; height: 100px; background-color: #ca9ccc;}
+        nav{width: 1000px; height: 100px; background-color: #a779ad;}
+        aside{width: 200px; height: 600px; background-color: #d493c0;}
+        div{width: 800px; height: 300px; background-color: #d4b3cb;}
+        div+div{background-color: #b182a4;}
+        footer{width: 1000px; height: 100px; background-color: #aa61a6;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <nav>nav</nav>
+        <section class="cf">
+            <aside class="fl">aside</aside>
+            <article class="fl">
+                <div class="content1">content1</div>
+                <div class="content2">content2</div>
+            </article>
+        </section>
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>

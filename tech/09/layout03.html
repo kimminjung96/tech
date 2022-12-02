@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{background-color: #ffebef;}
+        #wrap{
+            width: 1000px;
+            height: 900px;
+            margin: auto;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+        aside{width: 200px; height: 900px; background-color: #ebbdc4;}
+        header{width: 800px; height: 100px; background-color: #ff9aab;}
+        section{width: 800px; height: 700px; background-color: rgb(216, 137, 180);}
+        footer{width: 800px; height: 100px; background-color: #d37887;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--부모에 너비와 높이가 있으면 clear됨-->
+        <aside class="fl">aside</aside>
+        <header class="fl">header</header>
+        <section class="fl">section</section>
+        <footer class="fl">footer</footer>
+    </div>
+
+</body>
+</html>
