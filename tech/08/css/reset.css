@@ -1,0 +1,25 @@
+      /* reset코드 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        /* cursive 펜글씨(손글씨는 뒤에 이것적기!) */
+        color: #333;
+        line-height: 1.8;
+        /* 부모를 기준으로 h1-6태그들의 크기가 변함 */
+        font-size: 16px;
+      }
+      a {
+        /* font-family는 적용되지만 색상이 상속이 안됌 따로 적용필요 */
+        color: #333;
+        text-decoration: none;
+      }
+      ul,
+      li,
+      ol,
+      dl,
+      dt {
+        list-style: none;
+      }

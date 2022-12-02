@@ -1,0 +1,36 @@
+body{font-family: "맑은 고딕","고딕","굴림";}
+#wrap{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+header{
+    background-color: #006699;
+    overflow: hidden;
+}
+header h1{
+    width: 40%;
+    float: left;
+    color: #fff;
+    padding-left: 20px;
+}
+header nav{
+    width: 56%;
+    float: right;
+}
+nav ul{list-style: none;}
+/* display: inline 너비,높이를 가지기 못해서 마진값이 위.아래 적용이 안됌 */
+/* float: left; 인라인 요소를 블럭처럼 사용할 수 있게 바꿔줌 */
+/* display: inline-block 은 익스8에서 호환이 안되서 (옛날 코드다) */
+nav ul li{display: inline; margin: 15px; float: left;}
+nav ul li a{color: white; text-decoration: none;}
+
+section{border: 5px solid #333; padding: 5px; overflow: hidden;}
+section article h2{background-image: url(../images/bg.png); background-repeat: no-repeat; padding-left: 30px;}section article dt{font-weight: bold; color: purple;}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}

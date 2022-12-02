@@ -1,0 +1,62 @@
+body{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px 10px;
+    background-color: #35a9be;
+    display: flex;
+    color: #fff;
+}
+h1{
+    width: 40%;
+}
+header ul{
+    width: 60%;
+    display: flex;
+    list-style: none;
+
+}
+header ul li{
+    padding: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section{
+    border: 1px solid #666;
+}
+.padding{
+    padding-right: 20px;
+}
+
+section ul.img{
+    list-style-image: url('../images/bg.png');
+    list-style-position: inside;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+section ul.img li{
+    margin: 0 0 30px;
+}
+section ul li dt{
+    color: blue;
+    font-size: 18px;
+}
+
+section ul li dd{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    background-color: #666;
+    color: #fff;
+}

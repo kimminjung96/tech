@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic.html</title>
+</head>
+<style>
+    #wrap,#wrap1{width:500px; background: #ff0; margin-bottom: 100px;}
+    #header,header     {width:500px; background: #ff0000;}
+    #sidebar,aside    {width:100px; float:left; background: #00ff26;}
+    #contents,section   {width:300px; float:left; background: #f8e74a;}
+    #sidebar_ad,aside.ad {width:100px; float:left; background: #2200ff;}
+    #footer,footer{width:500px; background: #585858;}
+  </style>
+<body>
+    <!-- 시맨틱(의미론적인) -->
+    <!-- 접근성고려 , 검색엔진(SEO) 최적화 -->
+    <div id="wrap">
+        <div id="header">header</div>
+        <div id="sidebar">sidebar</div>
+        <div id="contents">contents</div>
+        <div id="sidebar_ad">sidebar_ad</div>
+        <div id="footer">footer</div>
+    </div>
+    
+    <div id="wrap1">
+        <header>header</header>
+        <aside>sidebar</aside>
+        <section>contents</section>
+        <aside class="ad">sidebar_ad</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
