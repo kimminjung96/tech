@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+  <head>
+    <meta charset="utf-8">
+    <title>웹 폰트 사용하기</title>
+    <style>
+      /* @import 글꼴 로드시 항상 최상단에 선언 */
+      /* 모든 글꼴파일은 문서의 최상단에 선언 */
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+      @font-face {
+        font-family: 'RixInooAriDuriR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .ng-font{font-family: 'RixInooAriDuriR';}
+      .g-font{font-family: 'Nanum Pen Script', cursive;}
+    </style>
+  </head>
+
+  <body>
+    <p class="g-font">브라우저 기본 글꼴 사용</p>
+    <p class="ng-font">단, 글꼴 자체의 유료 판매, 수정 및 재배포를 할 수 없습니다.</p>
+  </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>withlabel</title>
+	<style type="text/css">
+		ul{list-style:none;}
+		li{margin:20px;}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<h3>수강분야(복수선택가능)</h3>
+		<!-- ul>(li>input:checkbox)*3 -->
+		<ul>
+			<li><label for="ch1">문법</label><input type="checkbox" id="ch1" value="grm"/></li>
+			<li><label for="ch2">작문</label><input type="checkbox" id="ch2" value="wr"/></li>
+			<li><label for="ch3">독해</label><input type="checkbox" id="ch3" value="rd"/></li>
+		</ul>
+		
+		<h3>수강과목(1과목만 선택가능)</h3>
+		<!-- ul>(li>label>input:radio)*3 -->
+		<!-- name: 데이터베이스에서 사용할 이름 // id: 디자인에서 사용할 이름 -->
+		<ul>
+			<li><label><input type="radio" name="subject" />영어회화</label></li>
+			<li><label><input type="radio" name="subject" />중국어회화</label></li>
+			<li><label><input type="radio" name="subject" />일어회화</label></li>
+		</ul>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

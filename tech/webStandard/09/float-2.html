@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>박스모델</title>
+		<style>
+			/* float로 배치할때 문제발생
+				float은 요소를 띄운다 
+				다음요소가 빈 공간을 차지함
+			*/
+
+			/* 해결하는법 
+			
+			1. clear 속성을쓴다
+			
+			*/
+			.box1 {
+				float:left;
+				background: #cc9595;
+				padding: 20px;
+				margin-right: 10px;
+			}
+			.box2 {
+				float:left;
+				background: #7dce74;
+				padding: 20px;
+				margin:0 auto;
+			}
+			.box3 {
+				float:right;
+				background: #876cd3;
+				padding: 20px;
+				margin-right: 10px;
+			}
+			.box4 {
+				/* float:right; */
+				clear:left;
+				clear:right;
+				clear:both;
+				background: #b2da4d;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">박스1</div>
+		<div class="box2">박스2</div>
+		<div class="box3">박스3</div>
+		<div class="box4">박스4</div>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+body{background-color: black; color:white;}
+.bgPage2{color:yellow;}
+#bgPage1{color:red;}
+#bgPage1.bgPage2{color:skyblue;}
+body#bgPage1.bgPage2{color:green;}
+html body#bgPage1.bgPage2{color:pink;}
