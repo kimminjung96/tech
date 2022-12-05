@@ -1,15 +1,10 @@
 #wrap{
     background-color: pink;
 }
-#header_inner,
-#main_inner,
-#pick_inner,
-#location_inner,
-#select_inner,
-#quick_inner,
-#footer_inner{
-    width: 1400px;
-    height: 200px;
+.inner{
+    width: 100%;
+    max-width: 1400px;
+    height: inherit;
     margin: auto;
 }
 
@@ -21,11 +16,11 @@
 #quick{background-color: #bb6e6e;}
 #footer{background-color: #eeadad;}
 
-#header_inner{background-color: #d89797;}
-#main_inner{background-color: #db8f8f;}
-#pick_inner{background-color: #bd7f7f;}
-#location_inner{background-color: #bb6565;}
-#select_inner{background-color: #daa2be;}
-#quick_inner{background-color: #bd7777;}
-#footer_inner{background-color: #dfa2a2;}
+header>.inner{height: 100px; background-color: #b46f6f;}
+#main>.inner{height: 100px; background-color: #db8f8f;}
+#pick>.inner{height: 100px; background-color: #bd7f7f;}
+#location>.inner{height: 100px; background-color: #bb6565;}
+#select>.inner{height: 100px; background-color: #daa2be;}
+#quick>.inner{height: 100px; background-color: #bd7777;}
+footer>.inner{height: 100px; background-color: #dfa2a2;}
 
