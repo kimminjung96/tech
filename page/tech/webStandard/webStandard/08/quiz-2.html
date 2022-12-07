@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>display 속성 08/quiz2.html</title>
+		<style>
+			ul {
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			ul {
+				width: 600px;
+				margin: auto;
+				height: 50px;
+			}
+			ul.dep1 > li {
+				position: relative;
+				display: inline-block;
+				box-sizing: border-box;
+				width: calc(600px / 5);
+				height: 50px;
+				padding: 10px 20px;
+				margin: 10px;
+				border: 1px solid;
+			}
+			ul > li > ul > li {
+				position: absolute;
+				display: none;
+				width: 120px;
+				height: 50px;
+				background: gray;
+				left: 0;
+				top: 50px;
+			}
+			ul.dep1 > li:hover ul > li {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul class="dep1">
+				<li>
+					<a href="#">메뉴1</a>
+					<ul class="dep2">
+						<li><a href="#">메뉴1-1</a></li>
+						<li><a href="#">메뉴1-2</a></li>
+						<li><a href="#">메뉴1-3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">메뉴2</a></li>
+				<li><a href="#">메뉴3</a></li>
+				<li><a href="#">메뉴4</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

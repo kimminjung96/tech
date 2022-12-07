@@ -4,10 +4,30 @@
 		<meta charset="utf-8">
 		<title>z-index 속성</title>
 		<style>
-
+			#wrapper{
+				position: relative;
+				top: 0px;
+				background-color: red;
+				height: 300px;
+				z-index: -2;
+			}
+			.box{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				border: 1px solid;
+				position: absolute;
+			}
+			#b1{left: 50px; z-index: 4;}
+			#b2{top: 50px; z-index: 10; background-color: gray;}
+			#b3{top: 70px; left: 110px; z-index: -1;}
 		</style>
 	</head>
 	<body>
-
+		<div id="wrapper">
+			<div class="box" id="b1">1</div>
+			<div class="box" id="b2">2</div>
+			<div class="box" id="b3">3</div>
+		</div>
 	</body>
 </html>

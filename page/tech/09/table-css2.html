@@ -7,14 +7,22 @@
 			body{
 				font-family:"맑은 고딕", "고딕", "굴림";
 			}
-			.table1 {
-				border:1px solid black;
-				border-collapse:collapse;
+			table{
+				border: 1px solid;
+				/* 통합해서 한줄로 */
+				border-collapse: collapse;
+				/* 기본값-분리 */
+				border-collapse: separate; 
+				/* 테이블과 티디의 선 사이 간격 */
+				border-spacing: 20px 10px;
 			}
-			.table1 td {
-				border:1px dashed black;
-				padding:10px;
-				text-align:center;
+			table td{
+				border: 1px dashed;
+				padding: 10px;
+			}
+			.table2 td{
+				empty-cells: hide;
+				empty-cells: show;
 			}
 		</style>
 	</head>
@@ -32,6 +40,21 @@
 			<tr>
 				<td>서울</td>
 				<td>서울 vs 강원</td>
+			</tr>		
+		</table>
+		<table class="table2">
+			<caption>프로축구 경기 일정</caption>
+			<tr>
+				<td>울산</td>
+				<td>울산 vs 인천</td>
+			</tr>		
+			<tr>
+				<td></td>
+				<td>부산 vs 대전</td>
+			</tr>		
+			<tr>
+				<td>서울</td>
+				<td></td>
 			</tr>		
 		</table>
 	</body>

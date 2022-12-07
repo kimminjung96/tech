@@ -1,0 +1,17 @@
+.container{display:flex; width: auto;}
+#opt1{
+  /* 주축정렬 */
+  justify-content: flex-start ;
+}
+#opt2{
+  justify-content: flex-end ;
+}
+#opt3{
+  justify-content: center ;
+}
+#opt4{
+  /* 여백 균등 분배 */  
+  justify-content: space-between ;  /* 시작점, 끝점에 배치후 나머지 같은간격 */
+  justify-content: space-around ;  /* 중첩영역 더함 */
+  justify-content: space-evenly ;  /* 중첩영역 무시 */
+}

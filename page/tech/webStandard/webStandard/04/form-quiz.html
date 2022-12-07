@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>form-quiz</title>
+</head>
+<body>
+	<h1>예약문의</h1>
+	<!-- 
+		코딩컨벤션
+		aBc 카멜케이스
+		a_bc 스네이크케이스
+		a-bc 케밥케이스
+	-->
+	<form action="#" method="post">
+		<p>
+			<label for="userName">작성자</label>
+			<input type="text" id="userName" name="userName">
+		</p>
+		<p>
+			<label for="userPWD">비밀번호</label>
+			<input type="password" id="userPWD" name="userPWD">
+		</p>
+		<p>
+			<label for="userTitle">제목</label>
+			<input type="password" id="userTitle" name="userTitle">
+		</p>
+		<p>예약하실 객실을 선택하세요
+			<label>
+				<input type="radio" name="userRoom" value="Single" checked />Single
+			</label> /
+			<label>
+				<input type="radio" name="userRoom" value="Double" />Double
+			</label> /
+			<label>
+				<input type="radio" name="userRoom" value="Twin" />Twin
+			</label> /
+		</p>
+		<p>기타 패키지 옵션을 선택하세요 <br>
+			<label>
+				<input type="checkbox" name="userOption1" value="조식" />조식
+			</label>
+			<label>
+				<input type="checkbox" name="userOption2" value="바베큐" />바베큐
+			</label>
+			<label>
+				<input type="checkbox" name="userOption3" value="픽업 서비스" />픽업 서비스
+			</label>
+		</p>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

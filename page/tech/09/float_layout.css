@@ -1,0 +1,20 @@
+#wrap {
+  /* width,height가 지정되어 있으므로 clearfix생략 */
+  width: 1200px;
+  height: 400px;
+  background-color: #fc8989;
+  margin: 50px auto;
+}
+#left {
+  width: 800px;
+  height: 400px;
+  background-color: #c76363;
+
+}
+#right {
+  width: 400px;
+  height: 400px;
+  background-color: #ee9d9d;
+}
+#top{width: 800px;height: 100px; background-color: red;}
+#bottom{width: 800px; height: 300px; background-color: }

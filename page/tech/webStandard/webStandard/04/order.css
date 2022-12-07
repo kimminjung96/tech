@@ -1,0 +1,53 @@
+/* body{background:red;} */
+.container{
+	width:600px;
+	margin:auto;
+}
+ul{
+	/* 불릿없앰 */
+	list-style-type:none;
+}
+
+/* label태그의 class속성이 title인 요소에 적용 */
+label.title{
+	font-weight:bold; /* 굵은글자 */
+	width:80px; /* 너비 */
+	float:left;	/* 왼쪽배치 */
+}
+
+div.centred{
+	text-align:center; /* 중앙정렬 */
+}
+fieldset{
+	margin:15px 10px; /* 상하 좌우 */
+}
+
+fieldset legend{
+	font-weight:bold; /* 굵은글자 */
+	font-size:18px; /* 글자크기 */
+	color:purple;
+}
+
+ul li{
+	margin:0 0 10px 0; 
+	/* 위 오른쪽 아래 왼쪽 */
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+fieldset:nth-child(3) label:first-child{
+	width:90px;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+

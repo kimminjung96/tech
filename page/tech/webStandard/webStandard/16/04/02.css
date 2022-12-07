@@ -1,0 +1,16 @@
+.container{display:flex;}
+#opt1{
+  flex-wrap:nowrap;/* 한줄에 표시 */
+}
+#opt2{
+  flex-wrap:wrap;/* 개행*/
+}
+#opt3{
+  flex-wrap:wrap-reverse;/* 개행 역순*/
+}
+#opt4{
+  /* flex-direction, flex-wrap 축약속성 */
+  flex-flow: row wrap; 
+  flex-flow: row nowrap; 
+  flex-flow: column wrap; 
+}

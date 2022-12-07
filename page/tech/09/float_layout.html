@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="float_layout.css">
+</head>
+<body>
+   <div id="wrap">
+    <div id="left" class="fl">
+        <div id="top"></div>
+        <div id="bottom">
+            <div class="bottomLeft fl">
+                <div class="leftTop"></div>
+                <div class="leftBottom">
+                    <div class="leftLeft fl">
+                        <div class="leftTop"></div>
+                        <div class="leftBottom"></div>
+                    </div>
+                    <div class="leftCenter fl"></div>
+                    <div class="leftRight fl"></div>
+                </div>
+            </div><!-- //class="bottomLeft" -->
+            <div class="bottomRight fl"></div>
+        </div>
+    </div><!-- //id="left" class="fl" -->
+    <div id="right" class="fl"></div>
+   </div>
+</body>
+</html>

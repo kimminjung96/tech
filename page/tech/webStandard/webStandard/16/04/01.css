@@ -1,0 +1,22 @@
+/* 부모=> 플렉스 컨테이너 */
+/* 자식=> 플렉스 아이템 */
+.container {
+	display: flex;
+}
+
+#opt1 {
+	/* 가로배치 왼->오 */
+	flex-direction: row;
+}
+#opt2 {
+	/* 가로배치 오->왼 */
+	flex-direction: row-reverse;
+}
+#opt3 {
+  flex-direction: column;
+
+}
+#opt4 {
+  flex-direction: column-reverse;
+
+}

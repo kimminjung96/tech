@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>bordertip</title>
+		<style>
+			/* border */
+			.border {
+				width: 1px;
+				height: 1px;
+				border-top: 10px solid rgba(255, 12, 12, 0);
+				border-right: 10px solid rgba(255, 12, 12, 0);
+				border-bottom: 10px solid rgb(202, 255, 12);
+				border-left: 10px solid rgba(251, 12, 255, 0);
+			}
+			/* .border_tip */
+			.border_tip {
+				width: 500px;
+				height: 100px;
+				background: #ace27a;
+				position: relative;
+				/* 브라우저 폭 50% */
+				left: 50%;
+				/* margin-left로 요소 너비의 1/2 음수로 작성 */
+				margin-left: -250px;
+				top: 100px;
+			}
+			.border_tip::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: -20px;
+				border-top: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #ace27a;
+				border-left: 10px solid transparent;
+				left: 50%;
+				margin-left: -10px;
+			}
+			.border_tip::after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -20px;
+				border-top: 10px solid #ace27a;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left: 10px solid transparent;
+				left: 50%;
+				margin-left: -10px;
+			}
+			.left {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				margin-top: -10px;
+				left: -20px;
+				border-top: 10px solid transparent;
+				border-right: 10px solid #ace27a;
+				border-bottom: 10px solid transparent;
+				border-left: 10px solid transparent;
+			}
+			.speech {
+				top: 200px;
+				left: 200px;
+				background: #333;
+				border-radius: 50%;
+				width: 300px;
+				height: 150px;
+				position: relative;
+			}
+			.speech:before {
+				content: "";
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border-right: 40px solid #333;
+				border-left: 40px solid transparent;
+				border-radius: 50%;
+				bottom: -15px;
+			}
+			.heart {
+				position: relative;
+				width: 80px;
+				height: 130px;
+				background: red;
+				margin-left: 60px;
+				border-radius: 80px 80px 0 0;
+				transform: rotate(-45deg);
+			}
+			.heart::before {
+				position: absolute;
+				content: "";
+				width: 80px;
+				height: 130px;
+				background: red;
+				margin-left: 60px;
+				border-radius: 80px 80px 0 0;
+				transform: rotate(90deg);
+				bottom: -25px;
+				right: -25px;
+        /* left:500px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="border_tip">
+			<div class="left"></div>
+			<div class="right"></div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eligendi facilis dolor adipisci quia quis voluptate debitis itaque voluptatem molestias deleniti, corporis odio facere soluta quibusdam? Eaque impedit numquam quos.
+		</div>
+		<div class="border"></div>
+		<div class="speech"></div>
+		<div class="heart"></div>
+	</body>
+</html>

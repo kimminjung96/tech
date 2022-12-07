@@ -1,0 +1,22 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Noto Sans KR", sans-serif, cursive;
+	color: #333;
+	line-height: 1.8;
+	font-size: 16px;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+ul,
+li,
+ol,
+dl,
+dt {
+	list-style: none;
+}

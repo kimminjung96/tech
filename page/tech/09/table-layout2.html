@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8">
-		<title>표 스타일</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>표 스타일</title>
     <style>
-
-		</style>
-	</head>
-	<body>
-		<h1>Table Layout</h1>
-		<table class="table1">
-			<tr>
-				<td>
-					한글로띄어쓰기없기길게붙여쓰기
-				</td>
-				<td>
-					long_description_without_space				
-				</td>
-			</tr>
-		</table>
-	</body>
+		table,td{
+			border: 1px solid ;
+		}
+		.table1{
+			border-collapse: collapse;
+			width: 300px;
+			/* 컨텐츠 양과 상관없이 표크기 고정 */
+			table-layout: fixed;
+			/* 줄바꿈 속성 :글자 기준으로 줄 바꿈 */
+			/* keep-all : 단어(띄어쓰기) 기준으로 줄 바꿈 */
+			/* word-wrap : 비아시아 언어제어 */
+			word-break: break-all;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>Table Layout</h1>
+    <table class="table1">
+      <tr>
+        <td>한글로띄어쓰기없기길게붙여쓰기</td>
+        <td>long_description_without_space</td>
+      </tr>
+    </table>
+  </body>
 </html>

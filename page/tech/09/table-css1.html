@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8">
-		<title>표 스타일</title>
+  <head>
+    <meta charset="utf-8" />
+    <!-- 테이블 테그는 백과소통이 좋음 but 검색엔진에 약함 -->
+    <title>표 스타일</title>
+	<!-- 테이블테그는 폰트속성이 상속이 안되엇음 but지금은 잘되네...? -->
     <style>
+		body{font-family: serif; color: rgb(100, 100, 100); font-size: 1em;}
+		.table1{border: 1px solid black;}
+		.table1 td{border: 1px dotted black; padding: 10px; text-align: center;}
 
-		</style>
-	</head>
-	<body>		
-		<table class="table1">
-			<caption>프로축구 경기 일정</caption>
-			<tr>
-				<td>울산</td>
-				<td>울산 vs 인천</td>
-			</tr>		
-			<tr>
-				<td>부산</td>
-				<td>부산 vs 대전</td>
-			</tr>		
-			<tr>
-				<td>서울</td>
-				<td>서울 vs 강원</td>
-			</tr>		
-		</table>
-	</body>
+	</style>
+  </head>
+  <body>
+    <table class="table1">
+      <caption>
+        프로축구 경기 일정
+      </caption>
+      <tr>
+        <td>울산</td>
+        <td>울산 vs 인천</td>
+      </tr>
+      <tr>
+        <td>부산</td>
+        <td>부산 vs 대전</td>
+      </tr>
+      <tr>
+        <td>서울</td>
+        <td>서울 vs 강원</td>
+      </tr>
+    </table>
+  </body>
 </html>

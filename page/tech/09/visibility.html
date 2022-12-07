@@ -4,7 +4,21 @@
 		<meta charset="utf-8">
 		<title>visibility 속성</title>
 		<style>
-
+			img{
+				border: 1px solid;
+			}
+			.invisible{
+				/* 요소의 가시성
+				visibility, opacity :공간남김
+				display :공간삭제
+				*/
+				/*visibility: hidden; */
+				/*display: none; */
+				/*transition 효과를 주려면 opacityaks 만 적용가능 0~1 효과*/
+				 opacity: 0;
+				 transition: all 2s;
+			}
+			img:first-child:hover + .invisible{ opacity: 1;}
 		</style>
 	</head>
 	<body>
