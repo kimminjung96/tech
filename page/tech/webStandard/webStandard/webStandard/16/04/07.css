@@ -1,0 +1,31 @@
+.container{width:80%; height:150px; display:flex; align-items: center;}
+
+.box{
+  width:60px; 
+  height:60px; 
+  margin:5px;
+}
+/* flex-basis 기본너비*/
+/* flex-grow 남는 공간에 맞춰서 늘려*/
+/* flex-shrink 모자라는 공간에 맞춰서 좁혀*/
+#box1{
+  flex-basis:auto;
+  flex-basis:0;
+  flex-basis:100px;
+  flex-basis:200px;
+  flex-basis:10%;
+  flex-grow:1;
+}
+#box2{
+  flex-grow: 1;
+  flex-grow: 0.5;
+  flex-grow: 5;
+  flex-shrink: 1;
+}
+#box3{
+  flex-shrink: 8;
+}
+#box4{
+  /* grow shrink basis(단위안쓰면 %) */
+  flex:1 5 120;
+}

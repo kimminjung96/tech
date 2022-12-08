@@ -1,0 +1,60 @@
+@charset "utf-8";
+body {
+  font-family: "맑은 고딕", "고딕", "굴림", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* layout */
+header {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #006699;
+  padding: 10px;
+}
+header ul li {
+  display: inline;
+  margin: 15px;
+}
+header ul li a {
+  color: white;
+}
+article {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  border: 5px solid #333;
+  /* clear-> overflow:hidden */
+  overflow: hidden;
+}
+article section {
+  float: left;
+  width: 30%;
+  height: 450px;
+  border: 1px dotted #333;
+  margin: 5px;
+  padding: 5px;
+}
+article aside {
+  /* clear-> clear:left; */
+  clear: left;
+  padding: 10px;
+  background: #99cc33;
+}
+article section h3{
+    background: url(../images/bg-note.png) no-repeat left center;
+    padding-left: 30px;
+}
+
+footer {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}

@@ -8,7 +8,7 @@
     margin: auto;
 }
 
-#header{background-color: #fdb0b0;}
+header {}
 #main{background-color: #be7e7e;}
 #pick{background-color: #ec8c8c;}
 #location{background-color: #eea7a7;}

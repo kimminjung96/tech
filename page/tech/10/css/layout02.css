@@ -1,0 +1,41 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: red;
+}
+header ul{
+    margin-left: 700px;
+
+}
+header li{
+    display: inline-block;
+}
+header li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    padding: 30px 14px;
+}
+article{
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin-right: 10px;
+    border: 1px solid #444;
+    padding: 0 10px 10px;
+}
+aside{
+    content: "";
+    display: block;
+    clear: both;
+    background-color: greenyellow;
+}
+footer{
+    background-color: #444;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}

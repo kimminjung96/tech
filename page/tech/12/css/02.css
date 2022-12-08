@@ -1,0 +1,51 @@
+body p{
+    background-color: pink;
+}
+p+h1{
+    color: red;
+    text-align: center;
+    position: relative;
+}
+p+h1::before{
+   content: "💛";
+}
+p~h2::before{
+   content: "💛";
+}
+
+
+/* ---------------속성선택자---------------- */
+a{font-size: 2em;}
+a[href]{
+    background: skyblue;
+}
+a[title="title"]{
+    text-decoration: none;
+    background-color: lemonchiffon;
+}
+
+/* ~= : 끝나는 애 (message로 끝나는 것) */
+input[value~="message"]{
+    border: 3px dashed red;
+}
+/* ^= : 시작되는 애 (tit로 시작되는  것) */
+a[title^="tit"]{
+    background-color: black;
+    color: white;
+}
+/* ^= : 포함하는 애 (anc로 시작되는  것) */
+a[title*="anc"]{
+   color: red;
+}
+
+
+/* 436p 에 속성선택자 정리 표 있음 */
+/* ---------------가상선택자---------------- */
+a:link{font-size: 14px; padding: 10px;}
+a:hover, a:focus{
+    background: wheat;
+    color: black;
+}
+a:active{
+    background-color: red;
+}

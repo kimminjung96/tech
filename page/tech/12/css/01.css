@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* 관계선택자 종류 */
+
+/* ---------------하위.자식---------------- */
+/* 하위선택자 : 하위의 모든 요소 선택 */
+#container ul{
+    border: 1px dotted blue;
+}
+/* 자식선택자 : 하위의 바로 아래 요소 선택 */
+#container>ul{
+    border: 1px dotted red;
+}
+#container>ul>li{
+    background: red;
+    border-bottom:10px double #fff;
+    float: left;
+}
+#container>header>h1{
+    background-color: pink;
+}
+
+#container h1{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ---------------형제---------------- */
+/* 바로 옆에 요소 */
+header+p{
+    background-color: pink;
+    border-bottom: 5px double hotpink;
+}
+/* 해당요소 전부 */
+header~p{
+    background-image: linear-gradient(90deg, yellow,green);
+    border-bottom: 5px double hotpink;
+}
+

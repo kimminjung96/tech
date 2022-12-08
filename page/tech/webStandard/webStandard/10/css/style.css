@@ -1,0 +1,106 @@
+@charset "utf-8";
+body {
+	font: 14px "맑은 고딕";
+}
+/* 자식을 float 으로 배치하면 부모가 자식 감싸지 못함
+  1. 부모한테 너비와 높이를 준다
+  2. 부모한테 overflow:hidden
+  3. 부모한테 clearfix 한다
+    3-1 clearfix 
+    부모요소에 가상선택자를 사용하여 빈 콘텐츠를 추가후 clear:both 하는 방법
+*/
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+}
+.container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header {
+	position: relative;
+	/* font-size: 16px; */
+	height: 280px;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+header h1 {
+	position: absolute;
+	right: 20px;
+	bottom: 70px;
+	font-size: 3em;
+	color: #ffc;
+	text-shadow: 1px 2px 2px #000;
+}
+header h2 {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	font-size: 2em;
+	color: #e6e619;
+	text-shadow: 1px 2px 2px #000;
+}
+nav {
+	position: relative;
+	background-color: #272727;
+	margin-top: -15px;
+}
+nav ul {
+	list-style: none;
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+nav ul li {
+	display: inline-block;
+	font-size: 15px;
+}
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px 15px 35px;
+	width: 150px;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+	text-shadow: 0px 2px 2px #000;
+	color: #fc0;
+}
+
+/* article */
+article .content {
+	width: 720px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+article .banner {
+	margin: 0 10px 15px 10px;
+	padding: 0;
+}
+/* aside */
+.sidebar {
+	float: right;
+	width: 200px;
+	height: 550px;
+	background-color: #ddffdd;
+	padding: 20px 10px 0 10px;
+}
+.sidebar img {
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+/* footer */
+footer{
+  padding:10px 0;
+  background-color: #030;
+  color:#fff;
+  text-align: center;
+  clear:both;
+}

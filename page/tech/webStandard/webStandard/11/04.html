@@ -2,7 +2,7 @@
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
-		<title>동영상 배경을 풀사이즈로 넣기</title>	
+		<title>동영상 배경</title>	
 		<style>
 			#container {
 				position:relative;
@@ -21,29 +21,13 @@
       a:hover {
         cursor:pointer;
       }
-	  #bg{
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: auto;
-		height: auto;
-		min-width: 100%;
-		min-height: 100%;
-		z-index: -100;
-		background: url(images/flame.jpg) no-repeat left top / cover;
-	  }
 		</style>
-		<!-- 조선부주석 : 익스에서만 읽힘
-			
-		-->
 		<!--[if lt IE 9]>
 		  <script src="js/html5shiv.min.js"></script>
 		<![endif]-->		
 	</head>
 	<body>
-		<div id="bg"></div>
-		<!-- poster : 플레이전 보이는 화면 -->
-		<video id="bg1" src="media/flame.mp4" poster="images/bg2.jpg" autoplay loop muted></video>
+		<video src="media/flame.mp4"></video>
 		<div id="container">
       <h2>사람을 구체적으로 도와주는 책</h2>
       <h1><a href="http://www.easyspub.co.kr">이지스퍼블리싱</a></h1>				
