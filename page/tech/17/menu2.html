@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .m_width{margin: auto; max-width: 1400px; width: 100%;}
+      .bg1{background-color: red;}
+      .bg2{background-color: royalblue;}
+      .bg3{background-color: rgb(65, 225, 73);}
+      .bg4{background-color: rgb(209, 225, 65);}
+      .pr{position: relative;}
+      .pa{position: absolute;}
+      .width100{width: 100%;}
+
+      /* 투뎁스 100% 배경 */
+      #nav>li>.width100{left: 0; display: none;}
+      #nav>li:hover .width100{display: block;}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <!-- lnb (relative), width100 (absolute) 너비 100% =>배경용도 -->
+        <!-- nav, depth2는 컨텐츠로 포지션을 주면 안됌 -->
+        <nav id="lnb" class="width100 pr bg4">
+          <ul id="nav" class="m_width bg1">
+            <li>
+              menu
+              <div class="width100 pa bg3">
+                <ul class="depth2 m_width bg2">
+                  <li>depth2</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

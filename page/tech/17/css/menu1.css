@@ -1,0 +1,120 @@
+html{
+  overflow-y: scroll;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.layout {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+}
+.layout > ul.menus {
+  padding: 30px 0;
+}
+ul.menus {
+  position: relative;
+  display: flex;
+}
+li.menu {
+  position: relative;
+}
+li.menu > a {
+  background-color: #f0f0f0;
+  padding: 0.5em 3.5em 0.5em 2em;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+li.menu > a::after {
+  content: "▼";
+  font-size: 0.8em;
+  color: #aaa;
+  position: absolute;
+  line-height: 1.3;
+}
+
+.menu input {
+  /* 기능은 작동 / 화면에서만 안보임 */
+  display: none;
+}
+
+.menu .content {
+  position: absolute;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  display: none;
+}
+.menus li:hover .content{
+    display: block;
+}
+.menu .content ul a {
+  color: #fff;
+  display: block; /* 컨텐츠가 길어질때 줄을 바꿀지 안바꿀지 */
+  white-space: nowrap;
+  padding: 5px;
+}
+.menu .content ul input + label {
+    display: block;
+    padding: 5px;
+  padding-right: 24px;
+}
+.menu .content ul li:nth-child(n + 2) {
+  border-top: 1px solid #999;
+}
+/* 1~5:nth-child(-n+5) */
+/* 15~20:nth-child(n+15):nth-child(-n+20) */
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    left: 100%;
+    margin: -20px 0 0 -16px;
+    background: #333;
+    z-index: 99;
+}
+.content>ul>li>input:checked+label+.submenu{
+    display: block;
+}
+.content>ul>li>input+label::after{
+    content: '▶';
+    position: absolute;
+    margin-left: 0.5em;
+    line-height: 1.2;
+    font-size: 14px;
+}
+.content>ul>li>input:checked+label::after{
+    content: '◀';
+}
+
+/*이미지 크기*/
+.content img{
+  max-width: 100%;
+}
+/* 1depth 3menu */
+.content article{
+  min-width: 360px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.content article::-webkit-scrollbar{
+  width: 5px;
+  background: rgb(205,78,151);
+background: linear-gradient(90deg, rgba(205,78,151,1) 0%, rgba(0,212,255,0) 100%);
+}
+/*버튼*/
+.content article::-webkit-scrollbar-thumb{
+  background: skyblue;
+  border-radius: 50%;
+}
